@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "name": "cheerios",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "Breakfast Products",
+            "subCategory": "cereal_shop"
+        },
+        {
+            "name": "Eggo",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "Breakfast Products",
+            "subCategory": "pancakes"
+        },
+        {
+            "name": "frenchToast",
+            "price": 4.99,
+            "quantity": 5,
+            "category": "Breakfast Products",
+            "subCategory": "breads"
+        },
+        {
+            "name": "QuakerOats",
+            "price": 5.99,
+            "quantity": 5,
+            "category": "Breakfast Products",
+            "subCategory": "oats"
+        },
+        {
+            "name": "Cinnabon",
+            "price": 6.99,
+            "quantity": 5,
+            "category": "Breakfast Products",
+            "subCategory": "rollbacks"
+        }
+    ]
+}

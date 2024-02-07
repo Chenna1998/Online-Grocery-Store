@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "itemNumber": "I0009",
+            "name": "pieFillings",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "baking",
+            "subCategory": "baking"
+        },
+        {
+            "itemNumber": "I0010",
+            "name": "crusts",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "baking",
+            "subCategory": "baking"
+        },
+        {
+            "itemNumber": "I0011",
+            "name": "puddingMixes",
+            "price": 4.99,
+            "quantity": 5,
+            "category": "baking",
+            "subCategory": "baking"
+        },
+        {
+            "itemNumber": "I0012",
+            "name": "piePans",
+            "price": 5.99,
+            "quantity": 5,
+            "category": "baking",
+            "subCategory": "baking"
+        }
+    ]
+}

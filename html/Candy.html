@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href = "../css/mystyle.css">
+</head>
+<body>
+  <header>
+    <img src="../images/logo.png" alt="logo" class="logo">
+    <h1>OnGro - Online Grocers</h1>
+    <button class="nav-cart" id="registerBtn"><a href="./Register.html">Register</a></button>
+    <button class="nav-cart" id="loginBtn"><a href="./Login.html">Login</a></button>
+    <button class="nav-cart" id="cartBtn"><a href="./Cart.html">Go to Cart</a></button>
+    <button class="nav-cart" id="logoutBtn"><a href="#" onclick="logout()">Logout</a></button>
+    <button class="nav-cart" id="myAccountBtn"><a href="#">My Account</a></button>
+  </header>
+  <div id = "navbar">
+    <a href="./Home.html">Home</a>
+      <a href="./FreshProducts.html">Fresh Products</a>
+      <a href="./Frozen.html">Frozen</a>
+      <a href="./Pantry.html">Pantry</a>
+      <a href="./BreakfastAndCereal.html">Breakfast and Cereal</a>
+      <a href="./Baking.html">Baking</a>
+      <a href="./Snacks.html">Snacks</a>
+      <a href="./Candy.html">Candy</a>
+      <a href="./SpecialityShops.html">Speciality Shops</a>
+      <a href="./Deals.html">Deals</a>
+      <!--<a href="./MyAccount.html">My Account</a>-->
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact Us</a>
+  </div>
+
+
+
+  <div class="container">
+    <div class="sidecontent">
+        <h4><em>Candy</em></h4>
+      <img src = "../images/candy.jpg" alt = "grocerries image" class = "img_side">
+    </div>
+    <div class="maincontent">
+      <!--<form action="#" method="post">
+        <table class = "items">
+            <tr>
+                <td><strong>Item Name</strong></td>
+                <td><strong>Price</strong></td>
+                <td><strong>Quantity</strong></td>
+            </tr>
+            <tr>
+                <td>Hersheys</td>
+                <td>$3.99</td>
+                <td><input type = "number" placeholder="Enter a number" required></td>
+            </tr>
+            <tr>
+                <td>Snickers</td>
+                <td>$0.99</td>
+                <td><input type = "number" placeholder="Enter a number" required></td>
+            </tr>
+            <tr>
+                <td>M&Ms</td>
+                <td>$3.49</td>
+                <td><input type = "number" placeholder="Enter a number" required></td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>$4.59</td>
+                <td><input type = "number" placeholder="Enter a number" required></td>
+            </tr>
+            <tr>
+                <td>Lindor</td>
+                <td>$11.99</td>
+                <td><input type = "number" placeholder="Enter a number" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add to Cart" style="width:100%;"></td>
+            </tr>
+        </table>
+      </form>-->
+      <div class="search-div">
+        <input type="text" id="candy-search-input" placeholder="Enter the name of candy">
+        <button id = "search-button">Search</button>
+        <!--
+        <button onclick="searchItem('candy-search-input', 'candy-error', 'candy_list')" id = "search-button">Search</button>-->
+      </div>
+      <div class="candy-results">
+        <div id="products-error" class="error"></div>
+        <table class="items" id="product_list">
+          <!-- Candy details will be added here dynamically using JavaScript -->
+        </table>
+      </div>
+    </div>
+</div>
+  
+  <footer class = "footer">
+    <div>
+        <img src="../images/logo.png" alt="logo" class="footer_logo">
+        <p>All rights reserved. For queries please <a href="./ContactUs.html">contact us.</a></p>
+        <p> Austin | Dallas | Houston</p>
+        <p>First Name: <em>Revanth</em>, Last Name: <em>Chenna</em>, NetId: <em>RXC210069</em></p>
+        <p id="date-time"></p>
+    </div>
+  </footer>
+  <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/displaySearchProducts.js"></script>
+  <script src="../scripts/add_to_cart.js"></script>
+</body>
+</html>

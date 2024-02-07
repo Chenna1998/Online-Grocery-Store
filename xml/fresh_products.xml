@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+  <product>
+    <name>Carrots</name>
+    <price>2.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>vegetables</subCategory>
+  </product>
+  <product>
+    <name>Strawberry</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>fruits</subCategory>
+  </product>
+  <product>
+    <name>Mango</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>precut</subCategory>
+  </product>
+  <product>
+    <name>Orchids</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>flowers</subCategory>
+  </product>
+  <product>
+    <name>Mayo</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>salsa</subCategory>
+  </product>
+  <product>
+    <name>Apricots</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>season</subCategory>
+  </product>
+  <product>
+    <name>Mushrooms</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>newItems</subCategory>
+    </product>
+  <product>
+    <name>BrusselsSprouts</name>
+    <price>2.99</price>
+    <quantity>5</quantity>
+    <category>Fresh Products</category>
+    <subCategory>rollbacks</subCategory>
+  </product>
+</inventory>

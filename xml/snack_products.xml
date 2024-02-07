@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+  <product>
+    <name>lays</name>
+    <price>2.99</price>
+    <quantity>5</quantity>
+    <category>Snacks</category>
+    <subCategory>Snacks</subCategory>
+  </product>
+  <product>
+    <name>biscuits</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Snacks</category>
+    <subCategory>Snacks</subCategory>
+  </product>
+  <product>
+    <name>nuts</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Snacks</category>
+    <subCategory>Snacks</subCategory>
+  </product>
+  <product>
+    <name>crackers</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Snacks</category>
+    <subCategory>Snacks</subCategory>
+  </product>
+</inventory>

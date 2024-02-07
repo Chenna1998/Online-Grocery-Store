@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "name": "tomatoSoup",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "canned_goods"
+        },
+        {
+            "name": "corn",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "canned_vegetable"
+        },
+        {
+            "name": "hotSauce",
+            "price": 4.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "condiments"
+        },
+        {
+            "name": "PeanutButter",
+            "price": 5.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "pb_spread"
+        },
+        {
+            "name": "PizzaCrusts",
+            "price": 8.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "pasta_pizza"
+        },
+        {
+            "name": "oil",
+            "price": 6.99,
+            "quantity": 5,
+            "category": "Pantry Products",
+            "subCategory": "rollbacks"
+        }
+    ]
+}

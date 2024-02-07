@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+  <product>
+    <name>hotPockets</name>
+    <price>2.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_breakfast</subCategory>
+  </product>
+  <product>
+    <name>oreo</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_dessert</subCategory>
+  </product>
+  <product>
+    <name>fishAndChips</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_meals</subCategory>
+  </product>
+  <product>
+    <name>pizza</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_pizza</subCategory>
+  </product>
+  <product>
+    <name>frozenFish</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_meat</subCategory>
+  </product>
+  <product>
+    <name>pizzaRolls</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>frozen_snacks</subCategory>
+  </product>
+  <product>
+    <name>shrimp</name>
+    <price>1.99</price>
+    <quantity>5</quantity>
+    <category>Frozen Products</category>
+    <subCategory>rollbacks</subCategory>
+  </product>
+</inventory>

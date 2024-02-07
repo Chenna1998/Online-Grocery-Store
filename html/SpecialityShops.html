@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speciality Shops</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/mystyle.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo" class="logo" />
+      <h1>OnGro - Online Grocers</h1>
+      <button class="nav-cart" id="registerBtn"><a href="./Register.html">Register</a></button>
+    <button class="nav-cart" id="loginBtn"><a href="./Login.html">Login</a></button>
+    <button class="nav-cart" id="cartBtn"><a href="./Cart.html">Go to Cart</a></button>
+    <button class="nav-cart" id="logoutBtn"><a href="#" onclick="logout()">Logout</a></button>
+    <button class="nav-cart" id="myAccountBtn"><a href="#">My Account</a></button>
+    </header>
+    <div id="navbar">
+      <a href="./Home.html">Home</a>
+      <a href="./FreshProducts.html">Fresh Products</a>
+      <a href="./Frozen.html">Frozen</a>
+      <a href="./Pantry.html">Pantry</a>
+      <a href="./BreakfastAndCereal.html">Breakfast and Cereal</a>
+      <a href="./Baking.html">Baking</a>
+      <a href="./Snacks.html">Snacks</a>
+      <a href="./Candy.html">Candy</a>
+      <a href="./SpecialityShops.html">Speciality Shops</a>
+      <a href="./Deals.html">Deals</a>
+      <!--<a href="./MyAccount.html">My Account</a>-->
+      <a href="./AboutUs.html">About Us</a>
+      <a href="./ContactUs.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+      <div class="sidecontent">
+        <h4><em>Speciality Shops</em></h4>
+        <img
+          src="../images/speciality.jpg"
+          alt="grocerries image"
+          class="img_side"
+        />
+      </div>
+      <div class="maincontent">
+        <form action="#" method="post">
+          <table class="items">
+            <h4 class="h4">
+              We will be offering the following services too in the future!!!
+            </h4>
+            <tr>
+              <td>
+                <dl>
+                  <dt>Florist</dt>
+                  <dd>
+                    We are going to sell fresh flowers and plants. We offer a
+                    variety of services, such as flower arranging, plant care,
+                    and gift baskets.
+                  </dd>
+
+                  <dt>Gift Shop</dt>
+                  <dd>
+                    We sell a variety of gifts, such as jewelry, souvenirs, and
+                    home decor. We cater to specific interests, such as travel,
+                    sports, or hobbies.
+                  </dd>
+
+                  <dt>Bookstore</dt>
+                  <dd>
+                    We sell books, magazines, and newspapers. We have a wide
+                    selection of books, including fiction, nonfiction, and
+                    children's books.
+                  </dd>
+
+                  <dt>Music Store</dt>
+                  <dd>
+                    This store sells music, such as CDs, vinyl records, and
+                    sheet music. We have a wide selection of music, including
+                    popular music, classical music, and jazz.
+                  </dd>
+
+                  <dt>Shoe Store</dt>
+                  <dd>
+                    Our shoe store sells shoes for men, women, and children. We
+                    have a wide selection of shoes, including dress shoes,
+                    sneakers, and sandals.
+                  </dd>
+                </dl>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <div id="question-container">
+          <button
+            id="questionnaire"
+            class="questions-button"
+            onclick="startQuestionnaire()"
+          >
+            Click this Button for Special Offers
+          </button>
+          <div id="question" style="display: none">
+            <!-- Questions and options will be inserted here using JavaScript -->
+            <p id="question-text">Are you a student?</p>
+            <div id="options-div">
+              <div class="button-group">
+                <button class="option" onclick="answerQuestion('Yes')">
+                  Yes
+                </button>
+                <button class="option" onclick="answerQuestion('No')">
+                  No
+                </button><br>
+              </div>
+              <div class="button-group">
+                <button class="option" id="next-button">Next</button>
+                <button class="option" id="skip-button">Skip</button>
+              </div>
+            </div>
+          </div>
+          <div id="offer" class="items-offers" style="display: none">
+            <p id="offer-text"></p>
+            <p id="special-offer"></p>
+            <p id="time-spent"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <img src="../images/logo.png" alt="logo" class="footer_logo" />
+        <p>
+          All rights reserved. For queries please
+          <a href="./ContactUs.html">contact us.</a>
+        </p>
+        <p>Austin | Dallas | Houston</p>
+        <p>First Name: <em>Revanth</em>, Last Name: <em>Chenna</em>, NetId: <em>RXC210069</em></p>
+        <p id="date-time"></p>
+      </div>
+    </footer>
+    <script src="../scripts/scripts.js"></script>
+    <script>
+      let currentQuestionIndex = 0;
+      let answers = [];
+      let startTime;
+
+      const questions = [
+        {
+          question: "Are you a student?",
+          options: ["Yes", "No"],
+          buttons: ["Next", "Skip"],
+          offers: ["Student Offer", "General Offer"],
+        },
+        {
+          question: "Are you a low-income person?",
+          options: ["Yes", "No"],
+          buttons: ["Next", "Skip"],
+          offers: ["Low-Income Offer", "General Offer"],
+        },
+        {
+          question: "Do you frequently shop with us?",
+          options: ["Yes", "No"],
+          buttons: ["Next", "Skip"],
+          offers: ["Frequent Shopper Offer", "General Offer"],
+        },
+      ];
+      const discountsButton = document.getElementById("questionnaire");
+      const questionDiv = document.getElementById("question");
+      const optionsContainer = document.getElementById("options-div");
+      const questionText = document.getElementById("question-text");
+      const specialOfferText = document.getElementById("special-offer");
+      const timeSpentText = document.getElementById("time-spent");
+      const offerContainer = document.getElementById("offer");
+
+      function answerQuestion(answer) {
+        if (currentQuestionIndex < questions.length) {
+          answers.push(answer);
+          currentQuestionIndex++;
+        }
+      }
+
+      function displayQuestion(questionData) {
+        if (currentQuestionIndex < questions.length) {
+          // Display the next question
+          questionText.textContent = questionData.question;
+
+          // Hide all option buttons by default
+          optionsContainer.style.display = "block";
+          optionsContainer.innerHTML = "";
+
+          // Show the relevant option buttons
+          questionData.options.forEach((option) => {
+            const optionButton = document.createElement("button");
+            optionButton.className = "option";
+            optionButton.textContent = option;
+            optionButton.onclick = () => answerQuestion(option);
+            optionsContainer.appendChild(optionButton);
+          });
+
+          // Show the "Next" and "Skip" buttons
+          const nextButton = document.createElement("button");
+          nextButton.className = "nav-buttons";
+          nextButton.textContent = "Next";
+          nextButton.onclick = () => {
+            //currentQuestionIndex++; // Move to the next question
+            displayQuestion(questions[currentQuestionIndex]);
+          };
+          optionsContainer.appendChild(nextButton);
+
+          const skipButton = document.createElement("button");
+          skipButton.className = "nav-buttons skip";
+          skipButton.textContent = "Skip";
+          skipButton.onclick = () => {
+            answerQuestion("Skip"); // Mark as skipped
+            //currentQuestionIndex++; // Move to the next question
+            displayQuestion(questions[currentQuestionIndex]);
+          };
+          optionsContainer.appendChild(skipButton);
+        } else {
+          // Display the special offer
+          showSpecialOffer();
+        }
+      }
+
+      function showSpecialOffer() {
+        const endTime = new Date();
+        const timeDiff = endTime - startTime;
+        const seconds = Math.round(timeDiff / 1000);
+
+        timeSpentText.textContent = `Time spent answering questions: ${seconds} seconds`;
+        questionDiv.style.display = "none";
+        offerContainer.style.display = "block";
+
+        const specialOffer = determineSpecialOffer();
+        specialOfferText.textContent = `${specialOffer}`;
+      }
+
+      function determineSpecialOffer() {
+        // Here you can implement your logic to determine the special offer based on the user's answers
+        // Replace this placeholder logic with your own criteria
+        let specialOffer = "General Offer";
+
+        if (
+          answers[0] === "Yes" &&
+          answers[1] === "Yes" &&
+          answers[2] === "Yes"
+        ) {
+          specialOffer =
+            "Based on your answers, you qualify for $150 discount coupon";
+        } else if (
+          answers[0] === "No" &&
+          answers[1] === "Yes" &&
+          answers[2] === "Yes"
+        ) {
+          specialOffer =
+            "Based on your answers, you qualify for $70 discount coupon";
+        } else if (
+          answers[0] === "Yes" &&
+          answers[1] === "Yes" &&
+          answers[2] === "No"
+        ) {
+          specialOffer =
+            "Based on your answers, you qualify for $30 discount coupon";
+        } else {
+          specialOffer =
+            "Based on your answers, you do not qualify for any discount";
+        }
+
+        return specialOffer;
+      }
+
+      // Start the process when the page loads
+      function startQuestionnaire() {
+        startTime = new Date();
+        questionDiv.style.display = "block";
+        discountsButton.style.display = "none";
+        document.getElementsByClassName("items")[0].style.display = "none";
+        document.getElementsByClassName("h4")[0].style.display = "none";
+        displayQuestion(questions[currentQuestionIndex]);
+      }
+    </script>
+  </body>
+</html>

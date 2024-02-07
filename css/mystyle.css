@@ -1,0 +1,499 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(41, 37, 37); /*mew*/
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    padding: 20px;
+    color: greenyellow;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 0 auto;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: greenyellow;
+    /*new content*/
+    margin-top: 10px;
+
+}
+
+.footer div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer a{
+    color: greenyellow;
+}
+
+/*Horizontal Nagation Bar*/
+#navbar {
+    overflow: auto;
+    background-color: gold;
+    display: flex;
+    width: 100%;
+}
+
+#navbar a {
+    float: left;
+    font-weight: bold;
+    
+    text-decoration: none;
+    font-size: 18px;
+    width: 7.7%;
+    text-align: center;
+    height: 50px;
+    transition: .4s ease-in-out;
+    vertical-align: middle;
+}
+
+#navbar a:link{
+    color: navy;
+}
+
+#navbar a:visited{
+    color: grey;
+}
+
+.dealtags:active{
+    color:black;
+}
+
+#navbar a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.logo {
+    max-width: 8%;
+    border-radius: 80%;
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+    /*margin: 0 auto;*/
+    margin-left: 20px;
+    /*box-sizing: border-box;*/
+}
+
+.footer_logo
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 80px;
+    padding: 10px;
+    border-radius: 80%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    /* background-color: black; */
+    /*new content*/
+    flex-direction: row;
+}
+
+.sidecontent{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    box-shadow: 0 3px 10px rgba(97, 97, 97, 0.2);
+    /* border: 1px solid green; */
+    /*new content*/
+    position: sticky;
+    top: 0;
+    margin-right: 10px;
+}
+
+.sidecontent h4{
+    font-family: cursive;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.maincontent{
+    height: 100vh;
+    width: 75%;
+    background-color: rgb(41, 37, 37);
+    clear: none;
+    /* Adjust the margin to prevent overlapping with the header */
+    margin-left: 10px; /*new addition*/
+    margin-bottom: 100%;
+    overflow: auto;
+}
+
+.img_side{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 38%;
+    border-radius: 15%;
+}
+
+.img_deals{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 38%;
+    border-radius: 15%;
+    float: left;
+    visibility: inherit;
+}
+
+.welcome{
+    color: rgb(255, 255, 113);
+    list-style-type: none;
+}
+
+.welcome li{
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+}
+.h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.h4{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 30px;
+    color: rgb(255, 255, 113);
+}
+
+.h4_deals{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 113);
+}
+
+.items{
+    margin: 0 auto;
+    margin-top: 12%;
+    color: rgb(255, 255, 113);
+    padding: 10px;
+}
+
+.items td{
+    padding: 20px;
+}
+
+.items dl{
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.items ol{
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.body_deals{
+    background-image: url(../images/deals.jpg);
+    background-repeat: round;
+}
+
+/* contact us form  slectors to identify*/
+
+input[type=text], input[type=email],input[type=password], textarea {
+    padding: 5px;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:1px;
+    margin-bottom:1px;
+    font-size: 15px;
+    border-style: solid;
+    border-width:thin;
+    border-color: white;
+}
+
+input[type=submit]{
+    width:40%;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding-top:5px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom:5px;
+    transition: 0.3s ease-in-out;
+    border-style: none;
+}
+
+input[type=submit]:hover, input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, textarea:hover, input[type=radio]:hover{
+    background-color: rgb(155, 247, 242);
+}
+
+input[type=submit]:active{
+    background-color: silver;
+    color: white;
+}
+
+/* Add styles for error messages */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Style radio buttons and labels */
+input[type="radio"] {
+    display: inline-block; /* Display radio buttons inline */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+label[for="Gender"],
+label[for="male"],
+label[for="female"] {
+    display: inline-block; /* Display labels inline */
+    vertical-align: middle;
+    font-size: 16px; /* Adjust the font size if needed */
+    margin-right: 10px; /* Adjust the spacing between labels and radio buttons */
+    color: white; /* Change the label color to black */
+    text-align: center; /* Center-align the label */
+    width: auto; /* Allow labels to take their natural width */
+   
+}
+
+label[for="Gender"] {
+    margin-left:25%;
+}
+
+/*new content for product list*/
+/* Apply styles to the product list */
+#product-list {
+    color: rgb(255, 255, 113);
+    padding: 10px;
+    overflow-y: auto; /* Add a scrollbar if the content overflows */
+    max-height: 50vh; /* Set a maximum height to limit the list's size */
+}
+
+#product-list td {
+    padding: 20px;
+}
+
+#product-list dl {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#product-list ol {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.image-small {
+    width: 90px;
+    height: 75px;
+}
+
+/* Style the cart button */
+.nav-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white; /* Background color of the button */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline on hover */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth transition on hover */
+}
+
+.nav-cart a{
+    text-decoration: none;
+}
+
+/* Style the button on hover */
+.nav-cart:hover {
+    background-color: gold; /* Darker background color on hover */
+}
+
+#total-price {
+    color: rgb(255, 255, 113);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.cart-tables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 62%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+  }
+  
+
+/* Style the button on hover */
+.questions-button:hover {
+    background-color: goldenrod; /* Darker background color on hover */
+}
+
+#question-text {
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Position elements absolutely within the viewport */
+    top: 50%; /* Move elements 50% down from the top */
+    left: 62%; /* Move elements 50% from the left */
+    transform: translate(-50%, -50%); /* Center the elements */
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+#options-div {
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Position elements absolutely within the viewport */
+    top: 55%; /* Move elements 50% down from the top */
+    left: 62%; /* Move elements 50% from the left */
+    transform: translate(-50%, -50%); /* Center the elements */
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally within the group */
+  }
+
+  .option {
+    display: inline-block; /* Display buttons next to each other */
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add spacing between buttons */
+    margin-right: 10px;
+  }
+  .option:hover{
+    background-color: goldenrod;
+  }
+
+  .option:active,
+  .option:focus{
+    background-color: skyblue;
+  }
+  
+  .nav-buttons {
+    display: inline-block;
+    position: absolute;
+     /* Display buttons next to each other */
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add spacing between buttons */
+    margin-right: 10px;
+    top:75%;
+    left: 0%;
+  }
+  .skip{
+    left: 60%;
+  }
+  .nav-buttons:hover{
+    background-color: goldenrod;
+  }
+
+  .nav-buttons:active,
+  .nav-buttons:focus{
+    background-color: skyblue;
+  }
+
+  .items-offers {
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Position elements absolutely within the viewport */
+    top: 50%; /* Move elements 50% down from the top */
+    left: 62%; /* Move elements 50% from the left */
+    transform: translate(-50%, -50%); /* Center the elements */
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .search-div {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the elements */
+  }
+  
+  .search-div input {
+    margin-right: 10px; /* Add some spacing between the input and button */
+  }
+  
+  /*CSS for registration form*/
+.registration{
+    display: inline-block; /* Display labels inline */
+    vertical-align: middle;
+    font-size: 16px; /* Adjust the font size if needed */
+    margin-right: 10px; /* Adjust the spacing between labels and radio buttons */
+    color: rgb(255, 255, 113); /* Change the label color to black */
+    text-align: center; /* Center-align the label */
+    width: auto; /* Allow labels to take their natural width */
+}
+
+.register-button{
+    display: inline-block;
+    padding: 10px 5px;
+    background-color: white; /* Background color of the button */
+    color: black; /* Text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline on hover */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth transition on hover */
+}

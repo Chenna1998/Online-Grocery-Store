@@ -1,0 +1,11 @@
+{
+    "products": [
+        {
+            "name": "cakes",
+            "price": 2.99,
+            "quantity": 5,
+            "category": "baking",
+            "subCategory": "baking"
+        }
+    ]
+}
